@@ -1,0 +1,7 @@
+{
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/interview/[interviewId]/feedback/page": "app/dashboard/interview/[interviewId]/feedback/page.js",
+  "/(auth)/sign-in/[[...sign-in]]/page": "app/(auth)/sign-in/[[...sign-in]]/page.js",
+  "/dashboard/interview/[interviewId]/page": "app/dashboard/interview/[interviewId]/page.js",
+  "/dashboard/interview/[interviewId]/start/page": "app/dashboard/interview/[interviewId]/start/page.js"
+}
