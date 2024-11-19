@@ -1,5 +1,5 @@
 import { pgTable, serial, text, varchar, integer } from "drizzle-orm/pg-core";
-// AIzaSyBuntOizbibCI1OYL120cFvyGluC1k8Vug
+
 export const MockInterview = pgTable("mockinterviewtool", {
 	id: serial("id").primaryKey(),
 	jsonMockResp: text("jsonMockResp").notNull(),
