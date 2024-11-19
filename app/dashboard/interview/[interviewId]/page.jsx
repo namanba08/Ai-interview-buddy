@@ -36,10 +36,6 @@ function Interview({ params }) {
 		{ label: "Job Description", value: interviewData?.jobDesc },
 		{ label: "Years of Experience", value: interviewData?.jobExperience },
 	];
-	const info = process.env.NEXT_PUBLIC_INFORMATION;
-	const formattedInfo = info
-		.split("\n")
-		.map((line, index) => <p key={index}>{line}</p>);
 	return (
 		// <div className="my-10 ">
 		// 	<h2 className="font-bold text-2xl">Let's Get Started</h2>
@@ -269,7 +265,7 @@ function Interview({ params }) {
 							</AlertTitle>
 						</div>
 						<AlertDescription className="text-yellow-700 mt-2 ml-10">
-							{formattedInfo}
+							{process.env.NEXT_PUBLIC_INFORMATION}
 						</AlertDescription>
 					</Alert>
 				</div>
