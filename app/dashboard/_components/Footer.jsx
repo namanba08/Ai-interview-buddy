@@ -24,7 +24,7 @@ function Footer() {
           </a> */}
 
           <a
-            href="https://sharun266.github.io/Sharun-portfolio/"
+            href=""
             type="button"
             target="_blank"
             class="rounded-full bg-[#55acee] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
@@ -43,7 +43,7 @@ function Footer() {
           </a>
 
           <a
-            href="mailto:sharunattari266@gmail.com"
+            href="mailto:hacknaman08@gmail.com"
             type="button"
             class="rounded-full bg-[#dd4b39] p-3 uppercase leading-normal text-white shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white"
             data-twe-ripple-init

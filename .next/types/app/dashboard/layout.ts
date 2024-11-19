@@ -1,4 +1,4 @@
-// File: /Users/naman/Desktop/project/mission-interview/app/dashboard/layout.jsx
+// File: /Users/naman/Documents/trials/try2/app/dashboard/layout.jsx
 import * as entry from '../../../../app/dashboard/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

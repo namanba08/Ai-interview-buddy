@@ -1,4 +1,4 @@
-// File: /Users/naman/Desktop/project/mission-interview/app/(auth)/sign-in/[[...sign-in]]/page.jsx
+// File: /Users/naman/Documents/trials/try2/app/(auth)/sign-in/[[...sign-in]]/page.jsx
 import * as entry from '../../../../../../app/(auth)/sign-in/[[...sign-in]]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

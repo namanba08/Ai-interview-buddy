@@ -1,4 +1,4 @@
-// File: /Users/naman/Desktop/project/mission-interview/app/dashboard/interview/[interviewId]/start/page.jsx
+// File: /Users/naman/Documents/trials/try2/app/dashboard/interview/[interviewId]/start/page.jsx
 import * as entry from '../../../../../../../app/dashboard/interview/[interviewId]/start/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
