@@ -5,7 +5,7 @@ import { db } from "@/utils/db";
 import { MockInterview,UserAnswer } from "@/utils/schema";
 import { useUser } from "@clerk/nextjs";
 import { desc, eq, gte, lt, and } from "drizzle-orm";
-
+import { useRouter } from "next/navigation";
 import { React, useEffect, useState } from "react";
 import { UserButton } from "@clerk/nextjs";
 import {
@@ -32,6 +32,7 @@ import { set } from "date-fns";
 import moment from "moment";
 
 function Dashboard() {
+	const router = useRouter();
 	const { user } = useUser();
 	const [countOfInterviews, setCountOfInterviews] = useState(0);
 	const [avgScore, setAvgScore] = useState(0)
@@ -263,7 +264,15 @@ function Dashboard() {
 						</>
 					)}
 				</div>
-
+				<button
+					type="button"
+					className="rounded-xl bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+					onClick={() => 
+						router.push("/UploadResume")
+					}
+				>
+					Click to upload resume
+				</button>
 				{/* Main Content Grid */}
 				<div className="grid md:grid-cols-3 gap-6">
 					<div className="md:col-span-1 space-y-6">

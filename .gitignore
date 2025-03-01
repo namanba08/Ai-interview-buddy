@@ -4,3 +4,16 @@ node_modules
 
 .env.local
 .next
+# Ignore virtual environment
+embedding-service/venv/
+
+# Ignore compiled Python files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Ignore dependency lock files
+embedding-service/requirements.txt.lock
+
+eng.traineddata
+tessdata/*

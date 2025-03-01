@@ -1,4 +1,4 @@
-// File: /Users/naman/Documents/trials/try2/app/layout.js
+// File: /Users/naman/Desktop/AI_Interview v1.0/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
