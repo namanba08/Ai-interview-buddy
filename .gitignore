@@ -17,3 +17,5 @@ embedding-service/requirements.txt.lock
 
 eng.traineddata
 tessdata/*
+
+uploads/
