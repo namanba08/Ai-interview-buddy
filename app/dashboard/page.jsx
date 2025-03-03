@@ -28,7 +28,7 @@ import {
 } from "lucide-react";
 import AddNewInterview from "./_components/AddNewInterview";
 import Interviewlist from "./_components/Interviewlist";
-import { set } from "date-fns";
+import ResumeAnalysisButton from "./_components/AnalyseResumeButton";
 import moment from "moment";
 
 function Dashboard() {
@@ -151,7 +151,14 @@ function Dashboard() {
 				console.log("improvement",improvement)
 
 			
-			setAvgScore((rating/interviews.length));
+			setAvgScore(
+				parseFloat(
+					(((rating*10) / interviews.length).toFixed(2))
+				)
+			);
+			console.log("rating",rating)
+			console.log("avgScore",avgScore)
+			console.log("interview length",interviews.length)
 			setDuration(d)
 			console.log("duration",duration)
 		} catch (error) {
@@ -179,7 +186,7 @@ function Dashboard() {
 		},
 		{
 			label: "Avg. Score",
-			value: avgScore*10+'%',
+			value: avgScore+'%',
 			icon: Star,
 			description: "Performance rating",
 		},
@@ -264,15 +271,8 @@ function Dashboard() {
 						</>
 					)}
 				</div>
-				<button
-					type="button"
-					className="rounded-xl bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
-					onClick={() => 
-						router.push("/UploadResume")
-					}
-				>
-					Click to upload resume
-				</button>
+				
+				<ResumeAnalysisButton />
 				{/* Main Content Grid */}
 				<div className="grid md:grid-cols-3 gap-6">
 					<div className="md:col-span-1 space-y-6">
